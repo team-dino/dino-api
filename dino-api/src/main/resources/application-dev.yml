@@ -1,0 +1,18 @@
+
+spring:
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://db-dino.ce1auyemkgbo.ap-northeast-2.rds.amazonaws.com:3366/DINO?useSSL=false&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=Asia/Seoul&autoReconnection=true&zeroDateTimeBehavior=convertToNull
+    username: dino
+    password: xlaElsh12!!
+    hikari:
+      maximum-pool-size: 40
+      minimum-idle: 20
+      auto-commit: false
+      connection-timeout: 3000
+      connection-test-query: SELECT 1 FROM DUAL
+      validation-timeout: 2000
+
+server:
+  prot: 3001
